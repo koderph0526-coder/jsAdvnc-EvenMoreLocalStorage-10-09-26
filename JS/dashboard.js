@@ -38,7 +38,7 @@ function createGameCards(searchedGames) {
   //NOTE: innnerHTml can be used here because it's a localStorage not API, and also it's just different games, not personla info. + it i stored within a function as an empty'er
   gameCont.innerHTML = "";
 
-  //   Using this instead of the If statement within forEach:
+  //   Using this instead of the If statement within forEach(), running it before the forEach method to have start running prior to adding or searching for games
   if (searchedGames != "NA") {
     getGames = getGames.filter((game) => games.gameName.icludes(searchedGames));
   }
@@ -79,7 +79,7 @@ createGameCards("NA");
 
 const searchBar = document.querySelector("#search");
 
-searchBar.addEventListener("change", (e) => {
+searchBar.addEventListener("input", (e) => {
   let searchValue = searchBar.value;
   //createGameCards i bunnen her!
   createGameCards(searchValue);
