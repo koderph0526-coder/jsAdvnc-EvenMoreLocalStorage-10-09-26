@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <script src="./js/main.js" defer></script>
+    <title>Local Storage</title>
+    <!-- Teachers title: Login -->
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <!-- Note a button within the form with the type Submit will always activate the form -->
+      <form action="submit" id="formLogin">
+        <input
+          type="text"
+          name="username"
+          placeholder="F.eks Per"
+          class="inputField"
+          id="userField"
+        />
+        <!-- Name property becomes key value for object-->
+        <!-- NB! this is not a safe method to create a password login!! -->
+        <input
+          type="password"
+          name="password"
+          placeholder="******"
+          class="inputField"
+          id="passWfield"
+        />
+        <button type="submit" id="btnStyle">Log In</button>
+      </form>
+      <button id="signUp">CREATE USER</button>
+    </main>
+    <footer></footer>
+  </body>
+</html>

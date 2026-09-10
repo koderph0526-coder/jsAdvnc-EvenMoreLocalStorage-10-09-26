@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Copy - paste from teacher! */
+body {
+  background-color: #17466c;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* correct to figure etc!! */
+img {
+  width: 100px;
+}
+
+#gameContainer {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+
+#gameContainer > div {
+  background-color: grey;
+}
