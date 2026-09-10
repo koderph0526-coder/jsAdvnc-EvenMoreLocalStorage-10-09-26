@@ -79,6 +79,7 @@ createGameCards("NA");
 
 const searchBar = document.querySelector("#search");
 
+// Changes the parameter in eventlister from "change" to "input" as we want it to run the search per ellter input, not just when a user presses "enter" or "search"
 searchBar.addEventListener("input", (e) => {
   let searchValue = searchBar.value;
   //createGameCards i bunnen her!
